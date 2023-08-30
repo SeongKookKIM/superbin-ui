@@ -427,6 +427,9 @@ header.scroll svg {
   background: url(./img/1_home_career_pc.jpg) center center no-repeat;
   background-size: cover;
   padding: 220px 40px 218px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .career-inner {
   width: 100%;
