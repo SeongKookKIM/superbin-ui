@@ -370,7 +370,14 @@ header.scroll svg {
   padding: 34px 40px;
   border-radius: 20px;
   background-color: white;
+  cursor: pointer;
+  transition: 0.5s;
 }
+.news-list ul li:hover {
+  transform: translateY(-20px);
+  transition: 0.5s;
+}
+
 .news-list ul li b {
   background-color: #62cbf8;
   font-size: 15px;
@@ -405,6 +412,7 @@ header.scroll svg {
   width: auto;
   margin-top: 60px;
   font-size: 24px;
+  font-weight: 700;
   line-height: 29px;
   padding: 22px 32px;
   border: 2px solid rgba(34, 34, 34, 0.4);
