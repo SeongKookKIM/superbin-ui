@@ -40,6 +40,10 @@
     height: 100vh;
     background-color: white;
     display: none;
+    overflow-y: scroll;
+  }
+  .mobile-menu::-webkit-scrollbar {
+    display: none;
   }
   .m-menu-header {
     width: 100%;
@@ -187,5 +191,318 @@
     line-height: 22px;
     font-weight: 500;
     color: rgba(34, 34, 34, 1);
+  }
+  .main {
+    align-items: flex-end;
+    padding: 0 24px;
+  }
+  .main-content {
+    margin-bottom: 112px;
+  }
+  .main-content h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .main-content h2 svg {
+    display: block;
+    width: 54px;
+    height: 54px;
+    opacity: 1;
+    transition: 0.3s;
+    animation: move infinite 4s;
+  }
+  @keyframes move {
+    0% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(20px);
+    }
+    85% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+
+      transform: translateY(0px);
+    }
+  }
+  .intro {
+    padding: 100px 24px 75px;
+  }
+  .intro h3 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .intro p {
+    max-width: 272px;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 7px auto 32px;
+  }
+  .intro p .jump {
+    display: none;
+  }
+  .intro span {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px 20px;
+    border-radius: 8px;
+  }
+  .container {
+    padding: 50px 24px;
+  }
+  .container .container-wrapper {
+    max-width: 272px;
+    margin: 0 auto;
+    gap: 74px;
+  }
+  .container-wrapper li {
+    flex-direction: column;
+  }
+  .first-content {
+    width: 100%;
+    gap: 8px;
+  }
+  .first-content strong {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .first-content h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .first-content p {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 272px;
+    margin: 20px 0 40px;
+  }
+  .first-image {
+    width: 100%;
+    height: 368px;
+    border-radius: 10px;
+  }
+  .first-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .container-wrapper li:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-wrapper li:nth-of-type(2) .first-content {
+    order: 1;
+    width: 100%;
+    gap: 8px;
+    padding: 0;
+  }
+  .container-wrapper li:nth-of-type(2) .first-image {
+    order: 2;
+    margin-bottom: 67px;
+  }
+  .with {
+    padding: 100px 24px;
+  }
+  .with-inner {
+    max-width: 272px;
+    margin: 0 auto;
+  }
+  .with-title strong {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .with-title h2 {
+    font-size: 28px;
+    line-height: 38px;
+    margin: 10px 0 40px;
+  }
+  .with-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .with-link {
+    padding: 22px;
+  }
+  .with-link:nth-of-type(1) {
+    height: 360px;
+    border-radius: 10px;
+  }
+  .with-link:nth-of-type(2),
+  .with-link:nth-of-type(3) {
+    height: 180px;
+    border-radius: 10px;
+  }
+  .with-link h4 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 34px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .with-link:nth-of-type(2) h4,
+  .with-link:nth-of-type(3) h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .with-link h4 svg,
+  .with-link:nth-of-type(2) h4 svg,
+  .with-link:nth-of-type(3) h4 svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+  }
+  .with-link:nth-of-type(1):hover h4 svg,
+  .with-link:nth-of-type(2):hover h4 svg,
+  .with-link:nth-of-type(3):hover h4 svg {
+    margin-left: 0;
+  }
+  .news {
+    padding: 100px 24px;
+  }
+  .news-inner {
+    max-width: 272px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-title strong {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .news-title h2 {
+    font-size: 28px;
+    line-height: 38px;
+    margin: 10px 0 40px;
+  }
+  .news-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .news-list ul li {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .news-list ul li b {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+  .news-list ul li p {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 8px 0 18px;
+  }
+  .news-list ul li span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .news-list ul li:hover {
+    transform: translateY(-7px);
+  }
+  .news-more {
+    padding: 14px 26px;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 8px;
+    border: 1px solid rgba(34, 34, 34, 0.4);
+    margin: 36px auto 0;
+
+    transition: 0.3s;
+  }
+  .news-more:hover {
+    background-color: #222;
+    color: #fff;
+    transition: 0.3s;
+  }
+  .career {
+    padding: 132px 24px 100px;
+    height: auto;
+  }
+  .career-inner {
+    max-width: 272px;
+    margin: 0 auto;
+  }
+  .career-inner strong {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .career-inner h4 {
+    font-size: 28px;
+    line-height: 38px;
+    margin: 10px 0 28px;
+  }
+  .career-inner a p {
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 26px;
+  }
+  .footer {
+    padding: 60px 0 34px;
+  }
+  .footer-inner {
+    margin: 0 auto;
+    padding: 0 34px;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .footer-menu {
+    width: 100%;
+    order: 1;
+    flex-direction: column;
+    padding: 0;
+    gap: 60px;
+  }
+  .footer-info {
+    width: 100%;
+    order: 2;
+  }
+  .adress {
+    margin-bottom: 50px;
+  }
+  .contact p {
+    white-space: wrap;
+    width: 100%;
+  }
+  .contact p a.email {
+    display: inline-block;
+  }
+  .adress p {
+    white-space: wrap;
+  }
+
+  .sns {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-sns {
+    order: 1;
+    margin-bottom: 60px;
+  }
+  .footer-sns ul {
+    gap: 30px;
+  }
+  .footer-logo {
+    order: 2;
   }
 }

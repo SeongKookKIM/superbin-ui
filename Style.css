@@ -144,6 +144,9 @@ header.scroll svg {
   color: white;
   pointer-events: none;
 }
+.main-content h2 svg {
+  display: none;
+}
 
 /* Section-intro */
 .intro {
