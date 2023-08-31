@@ -1,0 +1,191 @@
+@media screen and (max-width: 1140px) {
+  body.menu {
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .nav-bar {
+    display: none;
+  }
+  header {
+    height: 64px;
+  }
+  .m-navbar {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 16px 22px 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .m-fixed-logo {
+    width: 97px;
+  }
+  .m-fixed-logo img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .m-menubar svg {
+    width: 34px;
+    height: 34px;
+    stroke: #b6aea1;
+    cursor: pointer;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+  }
+  .m-menu-header {
+    width: 100%;
+    height: 64px;
+    display: block;
+    padding: 16px 22px 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .m-fixed-logo {
+    width: 97px;
+  }
+  .m-fixed-logo img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .m-menubar svg {
+    width: 34px;
+    height: 34px;
+    stroke: #b6aea1;
+    cursor: pointer;
+  }
+  .search-box {
+    width: 100%;
+    padding: 16px 22px 16px 24px;
+    display: flex;
+  }
+  .search-box form {
+    width: 100%;
+    height: 36px;
+    position: relative;
+    padding-right: 10px;
+  }
+  .search-box form input {
+    width: 100%;
+    height: 100%;
+    font-family: "Pretendard-Regular";
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    outline: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(34, 34, 34, 0.3);
+  }
+  .search-box form input::placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #333;
+    font-family: "Pretendard-Regular";
+  }
+  .search-box form .lucide-search {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1px;
+    stroke: #333;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .search-box .lucide-user {
+    width: 36px;
+    height: 36px;
+    stroke-width: 1px;
+    stroke: #333;
+    cursor: pointer;
+  }
+  .m-menu-list {
+    width: 100%;
+    padding: 16px 22px 16px 24px;
+  }
+  .m-menu-list ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .m-menu-list ul li {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: rgb(34, 34, 34);
+  }
+
+  .m-menu-list ul li a {
+    color: rgb(34, 34, 34);
+  }
+  .m-menu-list ul li strong {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .m-menu-list ul li strong svg {
+    width: 26px 27px;
+    margin-left: 2px;
+    stroke: #b6aea1;
+  }
+  .m-menu-list ul li strong svg.lucide-chevron-up {
+    display: none;
+  }
+
+  .m-detail-list {
+    width: 100%;
+    padding-top: 18px;
+    transition: 0.8s;
+  }
+  .m-detail-list.hide {
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.8s;
+  }
+  .m-detail-list li {
+    width: 100%;
+    display: flex;
+    padding: 18px 0;
+    border-bottom: 1px solid #b6aea1;
+  }
+  .m-detail-list li:last-child {
+    border: none;
+  }
+  .m-detail-list li .m-left {
+    width: 50%;
+    pointer-events: none;
+  }
+  .m-left h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: rgba(34, 34, 34, 0.5);
+  }
+  .m-detail-list li .m-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .m-right a {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: rgba(34, 34, 34, 1);
+  }
+}
