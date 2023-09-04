@@ -456,6 +456,7 @@
   }
   .footer {
     padding: 60px 0 34px;
+    overflow-x: hidden;
   }
   .footer-inner {
     margin: 0 auto;
