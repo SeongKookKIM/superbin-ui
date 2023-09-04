@@ -486,7 +486,11 @@
   .contact p a.email {
     display: inline-block;
   }
+  .adress {
+    overflow-x: hidden;
+  }
   .adress p {
+    width: 100%;
     white-space: wrap;
   }
 
