@@ -649,7 +649,7 @@ header.scroll svg {
   opacity: 1;
   bottom: 0;
   transition: 0.5s;
-  z-index: 9999;
+  z-index: 99999;
 }
 .submit.show .google-form {
   display: block;
