@@ -478,14 +478,16 @@
   }
   .adress {
     margin-bottom: 50px;
-    border: 1px solid red;
+  }
+  .contact a {
+    cursor: pointer;
   }
   .contact p {
-    white-space: wrap;
     width: 100%;
   }
-  .contact p a.email {
+  .contact p span {
     display: inline-block;
+    cursor: pointer;
   }
   .adress {
     overflow-x: hidden;
