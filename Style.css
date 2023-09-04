@@ -622,3 +622,51 @@ header.scroll svg {
 .chat svg {
   fill: #333;
 }
+
+/* Submit */
+.submit {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.5s;
+}
+.submit.show {
+  transform: scale(1);
+  opacity: 1;
+  transition: 0.5s;
+}
+.submit .submit-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.send {
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 4px 4px 14px rgba(12, 64, 108, 0.11);
+  cursor: pointer;
+}
+.send svg {
+  stroke-width: 3px;
+}

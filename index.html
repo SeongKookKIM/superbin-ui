@@ -656,6 +656,53 @@
       </svg>
     </div>
 
+    <!--Submit  -->
+    <div class="send">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-mail-plus"
+      >
+        <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+        <path d="M19 16v6" />
+        <path d="M16 19h6" />
+      </svg>
+    </div>
+    <div class="submit">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-x submit-close"
+      >
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdSed8VUctRqAQPNgdRIA8Nb-jWUqbHsKqrYoYPsbh9Gyx0Pg/viewform?embedded=true"
+        width="640"
+        height="90%"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        >로드 중…</iframe
+      >
+    </div>
+
     <script>
       let nav = document.querySelector("header");
       let logo = document.querySelector(".fixed-logo img ");
@@ -665,6 +712,8 @@
       let mMenuBar = document.querySelector(".lucide-align-justify");
       let mMenuClose = document.querySelector(".lucide-x");
       let mobileMenu = document.querySelector(".mobile-menu");
+      let send = document.querySelector(".send");
+      let sendClose = document.querySelector(".submit-close");
 
       let toggleBtn = false;
       window.addEventListener("scroll", () => {
@@ -707,6 +756,17 @@
             ".m-menu-list ul li strong svg.lucide-chevron-up"
           ).style.display = "none";
         }
+      });
+
+      send.addEventListener("click", () => {
+        document.querySelector(".submit").classList.add("show");
+        document.querySelector("body").style.height = "100%";
+        document.querySelector("body").style.overflowY = "hidden";
+      });
+      sendClose.addEventListener("click", () => {
+        document.querySelector(".submit").classList.remove("show");
+        document.querySelector("body").style.height = "auto";
+        document.querySelector("body").style.overflowY = "scroll";
       });
     </script>
   </body>
