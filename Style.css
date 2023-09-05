@@ -640,9 +640,7 @@ header.scroll svg {
   opacity: 0;
   transition: 0.5s;
 }
-.submit .google-form {
-  display: none;
-}
+
 .submit.show {
   transform: scale(1);
   transform-origin: right bottom;
@@ -651,9 +649,7 @@ header.scroll svg {
   transition: 0.5s;
   z-index: 99999;
 }
-.submit.show .google-form {
-  display: block;
-}
+
 .submit .submit-close {
   position: absolute;
   top: 20px;
@@ -661,6 +657,9 @@ header.scroll svg {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+.submit form {
+  border: 1px solid red;
 }
 
 .send {
