@@ -6,6 +6,46 @@
     <title>Superbin-UI</title>
     <link rel="stylesheet" href="Style.css" />
     <link rel="stylesheet" href="Media.css" />
+
+    <!-- Email.js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("NRzBPAzFKAGVNQ48J");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = () => {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            document.querySelector('input[name="contact_number"]').value =
+              (Math.random() * 100000) | 0;
+
+            emailjs
+              .sendForm(
+                "service_zbgwd0t",
+                "template_7o3cz4c",
+                e.target,
+                "NRzBPAzFKAGVNQ48J"
+              )
+              .then(
+                function (response) {
+                  console.log("SUCCESS!", response.status, response.text);
+                  window.location.reload();
+                },
+                function (error) {
+                  console.log("FAILED...", error);
+                }
+              );
+          });
+      };
+    </script>
   </head>
   <body>
     <!-- Nav-bar -->
@@ -692,16 +732,18 @@
         <path d="M18 6 6 18" />
         <path d="m6 6 12 12" />
       </svg>
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdSed8VUctRqAQPNgdRIA8Nb-jWUqbHsKqrYoYPsbh9Gyx0Pg/viewform?embedded=true"
-        width="640"
-        height="90%"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        class="google-form"
-        >로드 중…</iframe
-      >
+
+      <form id="contact-form">
+        <label>이름</label>
+        <input type="text" name="user_name" />
+        <label>핸드폰번호</label>
+        <input type="email" name="user_phone" />
+        <label>이메일</label>
+        <input type="email" name="user_email" />
+        <label>문의내용</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send" />
+      </form>
     </div>
 
     <script>
