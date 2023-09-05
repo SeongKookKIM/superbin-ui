@@ -641,7 +641,7 @@ header.scroll svg {
   transform-origin: right bottom;
   z-index: -9999;
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
   padding: 40px 10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
